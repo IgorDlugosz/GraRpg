@@ -16,28 +16,29 @@ namespace Graa
             Console.WriteLine("Podaj liczbe wojownikow: ")
 
 
-numWar=int.Parse( Console.ReadLine());
+numWar = int.Parse(Console.ReadLine());
 
         }
    public void genWar()
         {
             warriors= new List<Warrior>();
-        }
+       
         Random random = new Random();
 for (int i=0;i< numOfWarriors; i++) {
 int typ = random.nextInt(3);
 if (typ==0) {
 warriors.add(new Warrior(Łucznik; + (i+1), 90, 30));
-} else if (typ==1) {
+} 
+        else if (typ==1) {
 warriors.add(new Warrior(Mag; + (i+1), 100, 25));
-} else if (typ == 2)
+} 
+    else if (typ == 2)
 {
     warriors.add(new Warrior( Nekromanta ; +(i + 1), 150, 15));
 }}
-for (Warrior warrior:warriors)
+for (Warrior warrior in warriors)
 {
-    Console.WriteLine(warrior.getName() + "ma"  +warrior.getHp()
-    + "hp");
-}}}   
+    Console.WriteLine(warrior.getName() + "ma" + warrior.getHp() + "hp") ;
+}}}}
 
     
